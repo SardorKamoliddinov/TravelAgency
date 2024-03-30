@@ -10,12 +10,14 @@ type CustomSelectProps = {
   optionOne: string;
   optionTwo: string;
   optionThird: string;
+  optionFourth: string;
 };
 
 const CustomSelect = ({
   optionOne,
   optionTwo,
   optionThird,
+  optionFourth,
   title,
 }: CustomSelectProps) => {
   return (
@@ -28,6 +30,7 @@ const CustomSelect = ({
           <SelectItem value={optionOne}>{optionOne}</SelectItem>
           <SelectItem value={optionTwo}>{optionTwo}</SelectItem>
           <SelectItem value={optionThird}>{optionThird}</SelectItem>
+          <SelectItem value={optionFourth}>{optionFourth}</SelectItem>
         </SelectContent>
       </Select>
     </div>

@@ -1,13 +1,11 @@
 import { TabsContent, TabsList, TabsTrigger, Tabs } from "@/components/ui/tabs";
-import { Input } from "@/components/ui/input";
-import { DatePickerDemo } from "./Popover";
-import { Button } from "./ui/button";
-import CustomSelect from "./Select";
+import Stays from "./Showcase/Stays/Stays";
+import Flight from "./Showcase/Flight/Flight";
 
 const CustomTabs = () => {
   return (
     <div>
-      <Tabs className="w-full bg-white h-full">
+      <Tabs className="bg-white">
         <TabsList className="flex gap-5">
           <TabsTrigger value="stays">Stays</TabsTrigger>
           <TabsTrigger value="flight">Flight</TabsTrigger>
@@ -15,22 +13,12 @@ const CustomTabs = () => {
           <TabsTrigger value="packages">Packages</TabsTrigger>
           <TabsTrigger value="things">Things to do</TabsTrigger>
         </TabsList>
-        <TabsContent
-          value="stays"
-          className="flex justify-center items-center gap-5 h-40 flex-wrap"
-        >
-          <Input className="border-solid border-black" placeholder="Goint to" />
-          <DatePickerDemo title="Departing" />
-          <DatePickerDemo title="Returning" />
-          <CustomSelect
-            title="Traveler"
-            optionOne="1 traveler"
-            optionTwo="2 traveler"
-            optionThird="3 traveler"
-          />
-          <Button className="bg-[#1F4AA8] text-white rounded-xl">Search</Button>
+        <TabsContent value="stays">
+          <Stays />
         </TabsContent>
-        <TabsContent value="flight">Change your password here.</TabsContent>
+        <TabsContent value="flight">
+          <Flight />
+        </TabsContent>
         <TabsContent value="cars">
           Make changes to your account here.
         </TabsContent>

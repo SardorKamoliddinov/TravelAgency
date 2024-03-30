@@ -3,7 +3,7 @@ import CustomTabs from "../Tabs";
 const Showcase = () => {
   return (
     <>
-      <div className="flex items-center justify-center flex-col pt-[150px]">
+      <div className="flex items-center justify-center flex-col pt-[150px] pb-11">
         <h1 className="text-7xl text-white w-2/3 text-center font-bold my-6">
           It Matters Who You Travel With
         </h1>

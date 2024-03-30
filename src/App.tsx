@@ -1,3 +1,4 @@
+import Destination from "./components/Destination/Destination";
 import Navbar from "./components/Navbar/Navbar";
 import Showcase from "./components/Showcase/Showcase";
 
@@ -8,6 +9,7 @@ function App() {
         <div className="w-[90%] mx-auto">
           <Navbar />
           <Showcase />
+          <Destination />
         </div>
       </div>
     </>
